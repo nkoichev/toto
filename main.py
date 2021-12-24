@@ -45,8 +45,8 @@ while True:
         break
 
 print('==========================')
-print(f'Имате съвпадение на {target} числа в този тираж: {random_list}')
-print(f'Печеливши числа: {winners}')
+print(f'Имате съвпадение на {target} числа {winners} в този тираж: {random_list}')
+print("   ")
 print(f'Брой на тиражите: {counter}')
 print(f'Брой месеци {int(round(counter/4,0))}')
 print(f'Брой години: {int(round(counter/4/12,0))}')
