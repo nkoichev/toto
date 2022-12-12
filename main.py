@@ -7,7 +7,7 @@ import numpy as np
 
 # put the numbers from 1 to 49 in a container with checkboxes
 
-
+st.write('Изберете 6 числа от 1 до 49, за да проверите колко време би отнело, за да бъдат изтеглени.')
 
 with st.form("my_form"):
 
@@ -19,7 +19,7 @@ with st.form("my_form"):
         if st.session_state[i]:
             my_list.append(i)
 
-    target = st.number_input('Въведете колко числа искате да съвпадат', min_value=1, max_value=6, value=3, step=1)
+    target = st.number_input('Въведете брой на печелившите числа (от 1 до 5). 6-цата е изключена като опция, защото изчисленията биха продължили твърде дълго!', min_value=1, max_value=5, value=5, step=1)
     submitted = st.form_submit_button("Submit")
 
 
