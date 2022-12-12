@@ -72,3 +72,6 @@ if submitted:
 
     with st.expander('Покажи кода на приложението'):
         st.code(code, language='python')
+
+    # stop the app from running
+    st.stop()
