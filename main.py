@@ -29,7 +29,7 @@ if submitted:
 
 
     winners = []
-    counter = 1
+    sedmici = 0
     random_list = []
 
     def winners_func(x, y, z):
@@ -52,7 +52,7 @@ if submitted:
 
     while True:
         rndm_func()
-        counter += 1
+        sedmici += 1
         winners_func(my_list, random_list, winners)
 
         if len(winners) < target:
@@ -63,8 +63,8 @@ if submitted:
         else:
             break
 
-    st.write(f'Имате съвпадение на {target} числа {winners} в тираж номер {counter}: {random_list}.')
-    st.write(f'При честота на тиражите веднъж седмично, бяха необходими {int(round(counter/4,0))} седмици (около {int(round(counter/52.177,0))} години), за да се случи съвпадение на {target} числа.')
+    st.write(f'Имате съвпадение на {target} числа {winners} в тираж номер {sedmici}: {random_list}.')
+    st.write(f'При честота на тиражите веднъж седмично, бяха необходими {int(round(sedmici/52.177*12,0))} месеца (около {int(round(sedmici/12,0))} години), за да се случи съвпадение на {target} числа.')
 
     # show the code for the app
     # code = python code from this file (main.py)
