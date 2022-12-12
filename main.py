@@ -64,7 +64,7 @@ if submitted:
             break
 
     st.write(f'Имате съвпадение на {target} числа {winners} в тираж номер {sedmici}: {random_list}.')
-    st.write(f'При честота на тиражите веднъж седмично, бяха необходими {int(round(sedmici/52.177*12,0))} месеца (около {int(round(sedmici/12,0))} години), за да се случи съвпадение на {target} числа.')
+    st.write(f'При честота на тиражите веднъж седмично, бяха необходими {int(round(sedmici/52.177*12,0))} месеца (около {int(round(sedmici/52.177,0))} години), за да се случи съвпадение на {target} числа.')
 
     # show the code for the app
     # code = python code from this file (main.py)
